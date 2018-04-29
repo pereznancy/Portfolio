@@ -1,0 +1,45 @@
+#header {
+  /* background-image: url('images/oxnardFields.jpg'); */
+  /* background-size: fill;
+  background-repeat: no-repeat; */
+  border: 1px solid black;
+  margin: 13%;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  background-color: #8000802b;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  padding: 10%;
+}
+
+img {
+  max-width: 100%;
+  opacity: .5;
+  background-size: cover;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  padding: 2%;
+  width: 30%;
+}
+
+li {
+  float: left;
+  padding: 3%;
+  text-align: center;
+  margin:auto;
+}
+
+article {
+  text-align: center;
+}
