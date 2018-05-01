@@ -1,36 +1,40 @@
 #header {
-  /* background-image: url('images/oxnardFields.jpg'); */
-  /* background-size: fill;
-  background-repeat: no-repeat; */
-  border: 1px solid black;
+  background-image: url('images/name.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
   margin: 13%;
   margin-top: 10%;
   margin-bottom: 0%;
-  background-color: #8000802b;
+  height: 599px;
 }
 
-h1 {
-  margin: auto;
-  text-align: center;
-  padding: 10%;
+html {
+  background-color: #7fa7d880;
 }
+
 
 img {
   max-width: 100%;
   opacity: .5;
-  background-size: cover;
 }
 
 nav {
   text-align: center;
 }
 
+nav a {
+  display: flex;
+  padding: 5px;
+  font-size:  3vw;
+}
+
 ul {
   text-align: center;
   list-style-type: none;
-  display: inline-block;
-  padding: 2%;
-  width: 30%;
+  display: flex;
+  width: 100%;
+  display: flex;
 }
 
 li {
@@ -42,4 +46,10 @@ li {
 
 article {
   text-align: center;
+  margin-top: 9%;
 }
+
+@media screen and (max-width: 800px) {
+  ul {
+    visibility: collapse;
+  }
