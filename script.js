@@ -2,6 +2,8 @@
 
 var myProjects = [];
 
+//this takes the place of the usual constructor.
+//instead of using this.name, this.wtv, this will automatically capture that
 function Project (rawProjectObj) {
   var keys = Object.keys(rawProjectObj);
   for (var index = 0; index <keys.length; index++) {
@@ -11,27 +13,27 @@ function Project (rawProjectObj) {
     }
   }
 
-//   this.name = rawDataObj.name;
-//   this.date = rawDataObj.date;
-//   this.image = rawDataObj.image;
-//   this.description = rawDataObj.description;
-// };x
 
+//this should duplicate the template and fill it in with the finished projects
 Project.prototype.toHtml = function() {
-  var $addProject = $('#projects').clone();
-  $addProject.removeClass('projects');
+  var $addProject = $('.template-article').clone();
+  $addProject.removeClass('template-article');
+  $addProject.addClass('my-project');
   $addProject.attr('id', this.id);
   $addProject.find('h2').html(this.name);
-  $addProject.find('#projectImage').attr('src', this.image);
+  $addProject.find('h5').html(this.date);
+  $addProject.find('#image1').attr('src', this.image1);
+  $addProject.find('#image2').attr('src', this.image2);
   $addProject.find('p').html(this.description);
   return $addProject;
 };
 
 
-finishedProjects.forEach(function(projectObject) {
-  myProjects.push(new Project(projectObject));
+finishedProjects.forEach( function(project) {
+  myProjects.push(new Project(project));
 });
 
+//appending wtv is in the myProjects array to the "projects" section
 myProjects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });

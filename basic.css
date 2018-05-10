@@ -11,26 +11,20 @@
 }
 
 html {
+  background: url(../images/fieldsBW.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: black;
 }
 
-section {
+h1 {
   color: white;
+  text-align: center;
+
 }
 
-a {
-  color: white;
-}
-
-#image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-    height: 179px;
-    padding-left: 11%;
-    padding-right: 11%;
-}
 #image img {
   flex-shrink: 0;
   min-width: 100%;
@@ -39,15 +33,13 @@ a {
   border-radius: 151px;
 }
 
-#projectImage {
-  border-radius: 151px;
-}
-
 nav {
   text-align: center;
+  color: white;
 }
 
-nav a {
+
+.main-nav a {
   display: flex;
   padding: 5px;
   font-size:  3vw;
@@ -60,6 +52,7 @@ nav a {
   display: none;
   padding: 0px;
   flex-direction: column;
+  color: white;
 }
 
 .main-nav .icon-menu:hover + ul {
@@ -71,13 +64,50 @@ li {
   padding: 3%;
   text-align: center;
   margin:auto;
+  color: white;
 }
 
-article {
+#hi {
   text-align: center;
   margin-top: 9%;
+  color: white;
 }
 
+/*projects css*/
+.template-article {
+  display: none;
+}
+
+.my-project {
+  width: 400px;
+  text-align: center;
+  background-color: #ffffff66;
+  border-radius: 10px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+.my-project img {
+  max-width: 90%
+}
+
+#projects {
+  text-align: center;
+}
+
+.project-images {
+  border-radius: 151px;
+}
+
+/*contact me section*/
+#contact-me {
+  color: white;
+}
+
+
+/*when screen reaches 650px*/
 @media screen and (min-width: 650px) {
   .main-nav ul {
     display: flex;
@@ -92,6 +122,15 @@ article {
     padding-left: 11%;
     padding-right: 11%;
   }
+
+  #projects {
+    display: flex;
+  }
+
+  .my-project {
+    padding: 10px;
+  }
+
 }
 
 @media screen and (min-width: 950px) {
