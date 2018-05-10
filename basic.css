@@ -83,10 +83,6 @@ article {
     display: flex;
     flex-direction: row;
   }
-}
-
-
-@media screen and (min-width: 650px) {
   #image {
     display: flex;
     justify-content: center;
@@ -95,15 +91,16 @@ article {
     height: 285px;
     padding-left: 11%;
     padding-right: 11%;
+  }
 }
 
 @media screen and (min-width: 950px) {
-  #images {
+  #image {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 350px;
+  height: 450px;
   padding-left: 11%;
   padding-right: 11%;
 }

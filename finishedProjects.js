@@ -2,6 +2,7 @@
 
 var finishedProjects = [
   {
+    id: 'project1',
     name: 'Salmon Cookies',
     date: 'February 2018',
     image: 'images/salmon.jpg',
