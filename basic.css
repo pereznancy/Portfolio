@@ -23,6 +23,7 @@ h1 {
   text-align: center;
   margin: 0;
   text-shadow: 5px 5px #3b3838;
+  font-size: 50px;
 }
 
 /* #image img {
@@ -69,7 +70,7 @@ li {
 
 #hi {
   text-align: center;
-  margin-top: 9%;
+  margin-top: 6%;
   color: white;
 }
 
@@ -109,6 +110,12 @@ h2, h5{
   color: white;
 }
 
+
+@media screen and (min-width: 415px) {
+  h1 {
+    font-size: 85px;
+  }
+}
 
 
 
@@ -155,7 +162,7 @@ h2, h5{
   margin: auto;
 }
 
-.my-project {
+#testProjects {
   background-color: #ffffff66;
   border-radius: 10px;
   color: white;
