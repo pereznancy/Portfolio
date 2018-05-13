@@ -1,11 +1,5 @@
 #page-header {
-  /* background-image: url('images/fieldsBW.jpg');
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center; */
-  margin: 13%;
-  margin-top: 9%;
-  margin-bottom: 0%;
+
   height: 61px;
   text-indent: -1000em;
 }
@@ -19,19 +13,25 @@ html {
   background-color: black;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-
+#intro {
+  height: 100px;
 }
 
-#image img {
+h1 {
+  color: white;
+  font-family: Brush Script MT, cursive;
+  text-align: center;
+  margin: 0;
+  text-shadow: 5px 5px #3b3838;
+}
+
+/* #image img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
   height: 175px;
   border-radius: 151px;
-}
+} */
 
 nav {
   text-align: center;
@@ -42,7 +42,7 @@ nav {
 .main-nav a {
   display: flex;
   padding: 5px;
-  font-size:  3vw;
+  font-size:  2vw;
 }
 
 .main-nav ul {
@@ -78,27 +78,30 @@ li {
   display: none;
 }
 
-.my-project {
-  width: 400px;
-  text-align: center;
+#testProjects {
   background-color: #ffffff66;
   border-radius: 10px;
   color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h2 {
+
+
+h2, h5{
   text-align: center;
-}
-.my-project img {
-  max-width: 90%
 }
 
-#projects {
-  text-align: center;
+#testProjects img {
+  max-width: 90%;
+
 }
+
 
 .project-images {
   border-radius: 151px;
+
 }
 
 /*contact me section*/
@@ -107,12 +110,19 @@ h2 {
 }
 
 
+
+
 /*when screen reaches 650px*/
 @media screen and (min-width: 650px) {
   .main-nav ul {
     display: flex;
     flex-direction: row;
   }
+
+  .main-nav span {
+    display: none;
+  }
+
   #image {
     display: flex;
     justify-content: center;
@@ -123,23 +133,37 @@ h2 {
     padding-right: 11%;
   }
 
-  #projects {
-    display: flex;
-  }
-
   .my-project {
     padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
 }
 
 @media screen and (min-width: 950px) {
-  #image {
+  #image1 {
+  height: 250px;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 450px;
-  padding-left: 11%;
-  padding-right: 11%;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+#projects {
+  width: 70%;
+  margin: auto;
+}
+
+.my-project {
+  background-color: #ffffff66;
+  border-radius: 10px;
+  color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  /* .my-project img {
+    max-width: 90%;
+  } */

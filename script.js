@@ -16,16 +16,18 @@ function Project (rawProjectObj) {
 
 //this should duplicate the template and fill it in with the finished projects
 Project.prototype.toHtml = function() {
-  var $addProject = $('.template-article').clone();
-  $addProject.removeClass('template-article');
-  $addProject.addClass('my-project');
-  $addProject.attr('id', this.id);
-  $addProject.find('h2').html(this.name);
-  $addProject.find('h5').html(this.date);
-  $addProject.find('#image1').attr('src', this.image1);
-  $addProject.find('#image2').attr('src', this.image2);
-  $addProject.find('p').html(this.description);
-  return $addProject;
+  // var $addProject = $('.template-article').clone();
+  // $addProject.removeClass('template-article');
+  // $addProject.addClass('my-project');
+  // $addProject.attr('id', this.id);
+  // $addProject.find('h2').html(this.name);
+  // $addProject.find('h5').html(this.date);
+  // $addProject.find('#image1').attr('src', this.image1);
+  // $addProject.find('p').html(this.description);
+  // return $addProject;
+  var templateFiller = Handlebars.compile($('#template-article').html());
+  var filledTemplate = templateFiller(this);
+  return filledTemplate;
 };
 
 
@@ -38,7 +40,9 @@ myProjects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
 
-
+$(document).ready(function(){
+  Project.prototype.toHtml();
+});
 // function renderMenu() {
 //   var projectList = document.getElementById('projects');
 //   for (var index = 0; index < projects.length; index++) {
