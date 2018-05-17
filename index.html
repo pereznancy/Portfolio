@@ -9,12 +9,13 @@
   <body>
       <header id="page-header">Nancy Perez Portfolio Site</header>
 
-      <div id="intro">
+      <div id="nameHeader">
         <h1>Nancy Perez</h1>
       </div>
       <nav class="main-nav">
-        <span class ="icon-menu"></span>
-          <ul>
+        <label class ="icon-menu" for="menu-toggle"></label>
+        <input id="menu-toggle" type="checkbox">
+          <ul id="main-menu">
             <li><a href="index.html">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact-me">Contact Me</a></li>
@@ -30,18 +31,19 @@
         </section>
       <section id="projects">
         <script id="template-article" type="text/x-handlebars-template">
-          <article id="testProjects">
+          <article class="testProjects">
             <a href="{{projectURL}}" target='_blank'>{{name}}</a>
             <h5>{{date}}</h5>
             <img id="image1" class="project-images" src="{{image1}}" ></img>
             <p>{{description}}</p>
           </article>
         </script>
+      </section>
       </main>
-      <section>
-        <section id="contact-me">
-          <h3>Possibly have a form to contact me or just list links</h3>
-        </section>
+      <section id="contact-me">
+        <h3>Possibly have a form to contact me or just list links</h3>
+      </section>
+
 
       <footer>
         <a target ="_blank" href="https://github.com/pereznancy">GitHub</a><a target="_blank" href="https://www.linkedin.com/in/nancy-perez-719713132/">LinkedIn</a>
