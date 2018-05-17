@@ -43,9 +43,22 @@ myProjects.forEach(function(project) {
 $(document).ready(function(){
   Project.prototype.toHtml();
 });
-// function renderMenu() {
-//   var projectList = document.getElementById('projects');
-//   for (var index = 0; index < projects.length; index++) {
-//     projects.innerHTML += `<h2 data-project-id="${projects[index].id}">${projects[index].title</h2>}`
-//   }
-// }
+
+//manual slide
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}

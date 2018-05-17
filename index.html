@@ -23,12 +23,18 @@
       </nav>
       <main>
         <section id="hi">
-          <article>
-            <div id="intro">
-              <h3>Hi, I'm Nancy!</h3>
-            </div>
+          <article id="intro">
+              <div class="slideshow">
+                <img class="mySlides" src="images/busMall.jpg">
+                <img class="mySlides" src="images/oxnardCity.jpg">
+                <img class="mySlides" src="images/oxnardFields.jpg">
+                <img class="mySlides" src="images/salmon.jpg">
+                <button class="slidshow-button" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="slidshow-button" onclick="plusDivs(1)">&#10095;</button>
+              </div>
           </article>
         </section>
+
       <section id="projects">
         <script id="template-article" type="text/x-handlebars-template">
           <article class="testProjects">
