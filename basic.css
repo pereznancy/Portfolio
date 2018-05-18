@@ -13,9 +13,6 @@ html {
   background-color: black;
 }
 
-#intro {
-  height: 100px;
-}
 
 h1 {
   color: white;
@@ -92,13 +89,17 @@ li {
   text-align: center;
   margin-top: 6%;
   color: white;
-  height: 300px;
+  height: 150px;
+  background-color: #ffffff66;
+  margin-bottom: 11%;
+  border-radius:10px;
 }
 
 .mySlides {
   display:none;
-  width:50%;
+  height: 150px;
   margin:auto;
+  border-radius: 5px;
 }
 .left, .right, .badge {
   cursor:pointer;
@@ -110,6 +111,9 @@ li {
 }
 .center {
   width: 100%;
+}
+.slidshow-button-right {
+  position:absolute;
 }
 
 /*projects css*/
@@ -153,9 +157,19 @@ h2, h5{
   h1 {
     font-size: 85px;
   }
+
+  .mySlides {
+    height: 200px;
+  }
+  #hi {
+    margin-bottom: 75px;
+    background-color: #ffffff66;
+    margin-right:auto;
+    margin-left: auto;
+    height: 200px;
+  }
+
 }
-
-
 
 /*when screen reaches 650px*/
 @media screen and (min-width: 650px) {
@@ -184,6 +198,18 @@ h2, h5{
     margin-bottom: 50px;
   }
 
+  .mySlides {
+    height: 300px
+  }
+
+  #hi {
+    margin-bottom: 75px;
+    background-color: #ffffff66;
+    margin-right:auto;
+    margin-left: auto;
+    height: 300px;
+  }
+
 }
 
 @media screen and (min-width: 950px) {
@@ -203,6 +229,9 @@ h2, h5{
 h1 {
   font-size: 150px;
 }
+
+
+
 
 .testProjects {
   background-color: #ffffff66;
