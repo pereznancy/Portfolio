@@ -75,6 +75,7 @@ nav {
 
 .main-nav a {
   color: white;
+  text-decoration: none;
 }
 
 li {
@@ -90,7 +91,6 @@ li {
   margin-top: 6%;
   color: white;
   height: 150px;
-  background-color: #ffffff66;
   margin-bottom: 11%;
   border-radius:10px;
 }
@@ -128,6 +128,7 @@ li {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 
@@ -160,10 +161,10 @@ h2, h5{
 
   .mySlides {
     height: 200px;
+    border: 5px solid white;
   }
   #hi {
     margin-bottom: 75px;
-    background-color: #ffffff66;
     margin-right:auto;
     margin-left: auto;
     height: 200px;
@@ -204,7 +205,6 @@ h2, h5{
 
   #hi {
     margin-bottom: 75px;
-    background-color: #ffffff66;
     margin-right:auto;
     margin-left: auto;
     height: 300px;
@@ -230,9 +230,6 @@ h1 {
   font-size: 150px;
 }
 
-
-
-
 .testProjects {
   background-color: #ffffff66;
   border-radius: 10px;
@@ -240,4 +237,5 @@ h1 {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }

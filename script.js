@@ -16,15 +16,6 @@ function Project (rawProjectObj) {
 
 //this should duplicate the template and fill it in with the finished projects
 Project.prototype.toHtml = function() {
-  // var $addProject = $('.template-article').clone();
-  // $addProject.removeClass('template-article');
-  // $addProject.addClass('my-project');
-  // $addProject.attr('id', this.id);
-  // $addProject.find('h2').html(this.name);
-  // $addProject.find('h5').html(this.date);
-  // $addProject.find('#image1').attr('src', this.image1);
-  // $addProject.find('p').html(this.description);
-  // return $addProject;
   var templateFiller = Handlebars.compile($('#template-article').html());
   var filledTemplate = templateFiller(this);
   return filledTemplate;
@@ -62,3 +53,19 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+//if menu clicked, X will show so user knows to exit menu
+$('.icon-menu').on('click', function(event) {
+  $(this).toggleClass('icon-cross');
+})
+
+$('#main-menu a').on('click', function () {
+  let choice = $(this).data('tab');
+  $('.tabs').hide();
+  $('#' + choice).fadeIn(500);
+})
+
+$(document).ready(function() {
+  $('.tabs').hide();
+  $('#hi').show();
+})

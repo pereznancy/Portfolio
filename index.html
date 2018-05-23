@@ -16,13 +16,13 @@
         <label class ="icon-menu" for="menu-toggle"></label>
         <input id="menu-toggle" type="checkbox">
           <ul id="main-menu">
-            <li><a href="index.html">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#" data-tab="hi">About</a></li>
+            <li><a href="#" data-tab="projects">Projects</a></li>
+            <li><a href="#" data-tab="contact-me">Contact Me</a></li>
           </ul>
       </nav>
       <main>
-        <section id="hi">
+        <section id="hi" class="tabs">
               <div class="slideshow">
                 <img class="mySlides" src="images/busMall.jpg">
                 <img class="mySlides" src="images/oxnardCity.jpg">
@@ -33,7 +33,7 @@
               </div>
         </section>
 
-      <section id="projects">
+      <section id="projects" class="tabs">
         <script id="template-article" type="text/x-handlebars-template">
           <article class="testProjects">
             <a href="{{projectURL}}" target='_blank'>{{name}}</a>
@@ -44,13 +44,14 @@
         </script>
       </section>
       </main>
-      <section id="contact-me">
+      <section id="contact-me" class="tabs">
         <h3>Possibly have a form to contact me or just list links</h3>
       </section>
 
 
       <footer>
-        <a target ="_blank" href="https://github.com/pereznancy">GitHub</a><a target="_blank" href="https://www.linkedin.com/in/nancy-perez-719713132/">LinkedIn</a>
+        <a href="https://github.com/pereznancy" target="_blank" class="icon-github">GitHub</a>
+        <a href="https://www.linkedin.com/in/nancy-perez-719713132/" target="_blank" class="class="icon-linkedin2">LinkedIn</a>
       </footer>
        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
