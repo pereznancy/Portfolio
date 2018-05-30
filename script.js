@@ -1,17 +1,17 @@
 'use strict'
 
-var myProjects = [];
-
 //this takes the place of the usual constructor.
 //instead of using this.name, this.wtv, this will automatically capture that
 function Project (rawProjectObj) {
-  var keys = Object.keys(rawProjectObj);
+  const keys = Object.keys(rawProjectObj);
   for (var index = 0; index <keys.length; index++) {
     var key = keys[index];
     var value = rawProjectObj[key];
     this[key]=value;
     }
   }
+
+  Project.all = [];
 
 
 //this should duplicate the template and fill it in with the finished projects
@@ -23,11 +23,25 @@ Project.prototype.toHtml = function() {
 
 
 finishedProjects.forEach( function(project) {
-  myProjects.push(new Project(project));
+  Project.all.push(new Project(project));
 });
 
+Project.fetchAll =function() {
+  if (localStorage.rawData) {
+    Project.loadAll(JSON.parse(localStorage.rawData));
+  } else {
+    $.ajax({
+      type:'GET',
+      url: '/finishedProjects.json',
+      success: function(finishedProjects) {
+        localStorage.setItem("finishedProjects", JSON.stringify(finishedProjects));
+      }
+    })
+  }
+}
+
 //appending wtv is in the myProjects array to the "projects" section
-myProjects.forEach(function(project) {
+Project.all.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
 
@@ -44,14 +58,13 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
+  const slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (let i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";
 }
 
 //if menu clicked, X will show so user knows to exit menu

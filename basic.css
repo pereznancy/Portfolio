@@ -5,7 +5,7 @@
 }
 
 html {
-  background: url(../images/fieldsBW.jpg) no-repeat center center fixed;
+  background: url(images/fieldsBW.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,6 +27,8 @@ h1 {
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s;
+  padding: 0;
+  margin: 0;
 }
 
 #menu-toggle {
@@ -44,9 +46,13 @@ nav {
 
 
 .main-nav a {
-  display: flex;
   padding: 5px;
   font-size:  2vw;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
 }
 
 /* .main-nav ul {
@@ -79,7 +85,6 @@ nav {
 }
 
 li {
-  float: left;
   padding: 3%;
   text-align: center;
   margin:auto;
@@ -96,9 +101,8 @@ li {
 }
 
 .mySlides {
-  display:none;
+  display: none;
   height: 150px;
-  margin:auto;
   border-radius: 5px;
 }
 .left, .right, .badge {
@@ -112,9 +116,7 @@ li {
 .center {
   width: 100%;
 }
-.slidshow-button-right {
-  position:absolute;
-}
+
 
 /*projects css*/
 .template-article {
@@ -208,6 +210,16 @@ h2, h5{
     margin-right:auto;
     margin-left: auto;
     height: 300px;
+  }
+
+  #main-menu {
+    max-height: none;
+    overflow: visible;
+    transition: all 0.5s;
+  }
+
+  .main-nav label {
+    display: none;
   }
 
 }

@@ -1,12 +1,11 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?wfb79s');
-	src:url('fonts/IcoMoon-Free.ttf') format('truetype'),
+	src:url('fonts/IcoMoon-Free.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
-.icon {
+.icon, [class*="icon-"] {
 	font-family: 'icomoon';
 	/* speak: none; */
 	font-style: normal;
@@ -36,7 +35,7 @@
 	content: "\e90a";
 }
 .icon-menu:before {
-	content: "\e902";
+	content: "\e9bd";
 }
 .icon-link:before {
 	content: "\e903";
@@ -54,7 +53,7 @@
 	content: "\e90c";
 }
 .icon-cross:before {
-	content: "\e90d";
+	content: "\ea0f";
 }
 .icon-checkmark:before {
 	content: "\e90e";
