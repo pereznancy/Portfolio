@@ -6,6 +6,8 @@
     Project.fetchAll();
     $('.tabs').hide();
     $('#hi').fadeIn(500);
+    repos.requestRepos(repoView.index);
   }
+
   module.aboutController = aboutController;
 })(window);
