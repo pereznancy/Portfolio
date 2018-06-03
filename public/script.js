@@ -11,7 +11,7 @@ function Project (rawProjectObj) {
     }
   }
 
-  Project.all = [];
+Project.all = [];
 
 
 //this should duplicate the template and fill it in with the finished projects
