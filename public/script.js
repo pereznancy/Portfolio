@@ -22,9 +22,11 @@ Project.prototype.toHtml = function() {
 };
 
 Project.loadAll = function(rawData) {
+  Project.all = [];
   rawData.forEach( function(project) {
     Project.all.push(new Project(project));
   });
+  $('#projects').empty();
   Project.all.forEach(function(project) {
     $('#projects').append(project.toHtml());
   });
