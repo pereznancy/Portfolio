@@ -41,6 +41,7 @@ Project.fetchAll = function() {
       type:'GET',
       url: './finishedProjects.json',
       success: function(finishedProjects) {
+        console.log(finishedProjects);
         localStorage.setItem("rawData", JSON.stringify(finishedProjects));
         Project.loadAll(finishedProjects);
       },
