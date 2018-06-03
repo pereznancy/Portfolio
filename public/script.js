@@ -24,7 +24,7 @@ Project.prototype.toHtml = function() {
 Project.loadAll = function(rawData) {
   rawData.forEach( function(project) {
     Project.all.push(new Project(project));
-  });
+  }); 
   Project.all.forEach(function(project) {
     $('#projects').append(project.toHtml());
   });

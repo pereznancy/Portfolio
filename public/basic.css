@@ -5,7 +5,7 @@
 }
 
 html {
-  background: url(images/fieldsBW.jpg) no-repeat center center fixed;
+  background: url(images/oxnardFieldsBW.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,14 +13,24 @@ html {
   background-color: black;
 }
 
+#fullName {
+  font-size: 0px;
+  color: black;
+  font-family: Brush Script MT, cursive;
+  text-align: center;
+  margin: 20px;
+  text-shadow: 5px 5px #3b38384d;
+  background-color: #ffffff6b;
+}
 
-h1 {
-  color: white;
+#initials {
+  color: black;
   font-family: Brush Script MT, cursive;
   text-align: center;
   margin: 0;
-  text-shadow: 5px 5px #3b3838;
+  text-shadow: 5px 5px #3b38384d;
   font-size: 50px;
+  background-color: #ffffff6b;
 }
 
 #main-menu {
@@ -41,18 +51,34 @@ h1 {
 
 nav {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 
 .main-nav a {
   padding: 5px;
-  font-size:  2vw;
+  font-size:  20px;
+  font-family: Brush Script MT, cursive;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .slideshow {
   display: flex;
   justify-content: center;
+}
+
+.slideshow-button-left {
+  font-size: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.slideshow-button-right {
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
 }
 
 /* .main-nav ul {
@@ -72,29 +98,25 @@ nav {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  color: white;
+  color: black;
 }
 
 .main-nav span {
   display: none;
 }
 
-.main-nav a {
-  color: white;
-  text-decoration: none;
-}
 
 li {
-  padding: 3%;
   text-align: center;
   margin:auto;
-  color: white;
+  color: black;
+  background-color: #ffffff6b
 }
 
 #hi {
   text-align: center;
   margin-top: 6%;
-  color: white;
+  color: black;
   height: 150px;
   margin-bottom: 11%;
   border-radius:10px;
@@ -124,9 +146,9 @@ li {
 }
 
 .testProjects {
-  background-color: #ffffff66;
+  background-color: #ffffffa8;
   border-radius: 10px;
-  color: white;
+  color: black;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -152,17 +174,22 @@ h2, h5{
 
 /*contact me section*/
 #contact-me {
-  color: white;
+  color: black;
 }
 
 
 @media screen and (min-width: 415px) {
-  h1 {
+  #fullName {
     font-size: 85px;
+    background-color: #ffffff6b;
+    margin: 20px;
+  }
+  #initials {
+    font-size: 0px;
   }
 
   .mySlides {
-    height: 200px;
+    height: 187px;
     border: 5px solid white;
   }
   #hi {
@@ -170,6 +197,18 @@ h2, h5{
     margin-right:auto;
     margin-left: auto;
     height: 200px;
+  }
+
+  .slideshow-button-left {
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .slideshow-button-right {
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
   }
 
 }
@@ -183,6 +222,10 @@ h2, h5{
 
   .main-nav span {
     display: none;
+  }
+
+  #initials {
+    font-size:0px;
   }
 
   #image {
@@ -202,7 +245,7 @@ h2, h5{
   }
 
   .mySlides {
-    height: 300px
+    height: 269px
   }
 
   #hi {
@@ -222,6 +265,18 @@ h2, h5{
     display: none;
   }
 
+  .slideshow-button-left {
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .slideshow-button-right {
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+  }
+
 }
 
 @media screen and (min-width: 950px) {
@@ -238,16 +293,25 @@ h2, h5{
   margin: auto;
 }
 
-h1 {
+#fullName {
   font-size: 150px;
+  background-color: #ffffff6b;
+}
+
+#initials {
+  font-size: 0px;
 }
 
 .testProjects {
-  background-color: #ffffff66;
+  background-color: #ffffffa8;
   border-radius: 10px;
-  color: white;
+  color: black;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.mySlides {
+  height: 315px
 }
