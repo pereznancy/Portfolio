@@ -24,7 +24,7 @@ Project.prototype.toHtml = function() {
 Project.loadAll = function(rawData) {
   rawData.forEach( function(project) {
     Project.all.push(new Project(project));
-  }); 
+  });
   Project.all.forEach(function(project) {
     $('#projects').append(project.toHtml());
   });
@@ -81,11 +81,11 @@ $('.icon-menu').on('click', function(event) {
   $(this).toggleClass('icon-cross');
 })
 
-$('#main-menu a').on('click', function () {
-  let choice = $(this).data('tab');
-  $('.tabs').hide();
-  $('#' + choice).fadeIn(500);
-})
+// $('#main-menu a').on('click', function () {
+//   let choice = $(this).data('tab');
+//   $('.tabs').hide();
+//   $('#' + choice).fadeIn(500);
+// })
 
 $(document).ready(function() {
   $('.tabs').hide();

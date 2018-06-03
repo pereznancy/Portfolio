@@ -17,9 +17,9 @@
         <label class="icon-menu" for="menu-toggle"></label>
         <input id="menu-toggle" type="checkbox">
           <ul id="main-menu">
-            <li><a href="#" data-tab="hi">About</a></li>
-            <li><a href="#" data-tab="projects">Projects</a></li>
-            <li><a href="#" data-tab="contact-me">Contact Me</a></li>
+            <li><a href="/" data-tab="hi">About</a></li>
+            <li><a href="/projects" data-tab="projects">Projects</a></li>
+            <li><a href="/contactme" data-tab="contact-me">Contact Me</a></li>
           </ul>
       </nav>
       <main>
@@ -56,8 +56,13 @@
       </footer>
        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+       <script src="page.js"></script>
        <script type="text/javascript" src="finishedProjects.js"></script>
        <script type="text/javascript" src="script.js"></script>
+       <script type="text/javascript" src="aboutController.js"></script>
+       <script type="text/javascript" src="projectsController.js"></script>
+       <script type="text/javascript" src="contactController.js"></script>
+       <script src="routes.js"></script>
        <script type="text/javascript">Project.fetchAll()</script>
 
   </body>
