@@ -3,7 +3,6 @@
 (function(module) {
   const aboutController = {};
   aboutController.body = () => {
-    Project.fetchAll();
     $('.tabs').hide();
     $('#hi').fadeIn(500);
   }

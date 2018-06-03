@@ -28,6 +28,7 @@ Project.loadAll = function(rawData) {
   Project.all.forEach(function(project) {
     $('#projects').append(project.toHtml());
   });
+  console.log(Project.all);
 }
 
 
