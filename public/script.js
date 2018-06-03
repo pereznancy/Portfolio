@@ -11,7 +11,7 @@ function Project (rawProjectObj) {
     }
   }
 
-  Project.all = [];
+Project.all = [];
 
 
 //this should duplicate the template and fill it in with the finished projects
@@ -53,11 +53,12 @@ Project.fetchAll = function() {
 
 
 //appending wtv is in the myProjects array to the "projects" section
-
-
 $(document).ready(function(){
   Project.prototype.toHtml();
+  $('.tabs').hide();
+  $('#hi').show();
 });
+
 
 //manual slide
 var slideIndex = 1;
@@ -87,8 +88,3 @@ $('.icon-menu').on('click', function(event) {
 //   $('.tabs').hide();
 //   $('#' + choice).fadeIn(500);
 // })
-
-$(document).ready(function() {
-  $('.tabs').hide();
-  $('#hi').show();
-})
