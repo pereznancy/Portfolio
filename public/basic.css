@@ -1,0 +1,318 @@
+#page-header {
+
+  height: 61px;
+  text-indent: -1000em;
+}
+
+html {
+  background: url(images/oxnardFieldsBW.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+}
+
+#fullName {
+  font-size: 0px;
+  color: black;
+  font-family: Brush Script MT, cursive;
+  text-align: center;
+  margin: 20px;
+  text-shadow: 5px 5px #3b38384d;
+  background-color: #ffffff6b;
+}
+
+#initials {
+  color: black;
+  font-family: Brush Script MT, cursive;
+  text-align: center;
+  margin: 0;
+  text-shadow: 5px 5px #3b38384d;
+  font-size: 50px;
+  background-color: #ffffff6b;
+}
+
+#main-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + #main-menu {
+  max-height: 110px;
+}
+
+nav {
+  text-align: center;
+  color: black;
+  height: 50px;
+}
+
+
+.main-nav a {
+  padding: 5px;
+  font-size:  20px;
+  font-family: Brush Script MT, cursive;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow-button-left {
+  font-size: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.slideshow-button-right {
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+}
+
+/* .main-nav ul {
+  text-align: center;
+  width: 100%;
+  display: none;
+  padding: 0px;
+  flex-direction: column;
+  color: white;
+} */
+
+.main-nav .icon-menu:hover + ul {
+  display: flex;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: black;
+}
+
+.main-nav span {
+  display: none;
+}
+
+
+li {
+  text-align: center;
+  margin:auto;
+  color: black;
+  background-color: #ffffff6b
+}
+
+#hi {
+  text-align: center;
+  margin-top: 6%;
+  color: black;
+  height: 150px;
+  margin-bottom: 11%;
+  border-radius:10px;
+}
+
+.mySlides {
+  display: none;
+  height: 150px;
+  border-radius: 5px;
+}
+.left, .right, .badge {
+  cursor:pointer;
+}
+.badge {
+  height:13px;
+  width:13px;
+  padding:0;
+}
+.center {
+  width: 100%;
+}
+
+
+/*projects css*/
+.template-article {
+  display: none;
+}
+
+.testProjects {
+  background-color: #ffffffa8;
+  border-radius: 10px;
+  color: black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+h2, h5{
+  text-align: center;
+}
+
+.testProjects img {
+  max-width: 90%;
+
+}
+
+
+.project-images {
+  border-radius: 151px;
+
+}
+
+/*contact me section*/
+#contact-me {
+  color: black;
+}
+
+
+@media screen and (min-width: 415px) {
+  #fullName {
+    font-size: 85px;
+    background-color: #ffffff6b;
+    margin: 20px;
+  }
+  #initials {
+    font-size: 0px;
+  }
+
+  .mySlides {
+    height: 187px;
+    border: 5px solid white;
+  }
+  #hi {
+    margin-bottom: 75px;
+    margin-right:auto;
+    margin-left: auto;
+    height: 200px;
+  }
+
+  .slideshow-button-left {
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .slideshow-button-right {
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+  }
+
+}
+
+/*when screen reaches 650px*/
+@media screen and (min-width: 650px) {
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav span {
+    display: none;
+  }
+
+  #initials {
+    font-size:0px;
+  }
+
+  #image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 285px;
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+
+  .my-project {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .mySlides {
+    height: 269px
+  }
+
+  #hi {
+    margin-bottom: 75px;
+    margin-right:auto;
+    margin-left: auto;
+    height: 300px;
+  }
+
+  #main-menu {
+    max-height: none;
+    overflow: visible;
+    transition: all 0.5s;
+  }
+
+  .main-nav label {
+    display: none;
+  }
+
+  .slideshow-button-left {
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .slideshow-button-right {
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+  #image1 {
+  height: 250px;
+  max-width: 100%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#projects {
+  width: 70%;
+  margin: auto;
+}
+
+#fullName {
+  font-size: 150px;
+  background-color: #ffffff6b;
+}
+
+#initials {
+  font-size: 0px;
+}
+
+.testProjects {
+  background-color: #ffffffa8;
+  border-radius: 10px;
+  color: black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mySlides {
+  height: 315px
+}
