@@ -13,24 +13,35 @@ html {
   background-color: black;
 }
 
-#fullName {
-  font-size: 0px;
-  color: black;
-  font-family: Brush Script MT, cursive;
+#intro {
+  font-size: 30px;
   text-align: center;
-  margin: 20px;
+  font-family: Brush Script MT, cursive;
   text-shadow: 5px 5px #3b38384d;
   background-color: #ffffff6b;
+  width: 70%;
+  margin: auto;
+  margin-top: 25px;
 }
 
-#initials {
+
+#fullName {
   color: black;
   font-family: Brush Script MT, cursive;
   text-align: center;
-  margin: 0;
+  margin: auto;
   text-shadow: 5px 5px #3b38384d;
   font-size: 50px;
   background-color: #ffffff6b;
+  width: 89%;
+}
+
+#nopal {
+  width:10%
+}
+
+#hi {
+  text-align: center;
 }
 
 #main-menu {
@@ -114,7 +125,7 @@ li {
   background-color: #ffffff6b
 }
 
-#hi {
+#aboutMe {
   text-align: center;
   margin-top: 6%;
   color: black;
@@ -183,17 +194,14 @@ h2, h5{
   #fullName {
     font-size: 85px;
     background-color: #ffffff6b;
-    margin: 20px;
-  }
-  #initials {
-    font-size: 0px;
+    margin: auto;
   }
 
   .mySlides {
     height: 187px;
     border: 5px solid white;
   }
-  #hi {
+  #aboutMe {
     margin-bottom: 75px;
     margin-right:auto;
     margin-left: auto;
@@ -225,9 +233,6 @@ h2, h5{
     display: none;
   }
 
-  #initials {
-    font-size:0px;
-  }
 
   #image {
     display: flex;
@@ -249,7 +254,7 @@ h2, h5{
     height: 269px
   }
 
-  #hi {
+  #aboutMe {
     margin-bottom: 75px;
     margin-right:auto;
     margin-left: auto;
@@ -299,10 +304,6 @@ h2, h5{
   background-color: #ffffff6b;
 }
 
-#initials {
-  font-size: 0px;
-}
-
 .testProjects {
   background-color: #ffffffa8;
   border-radius: 10px;
@@ -315,4 +316,8 @@ h2, h5{
 
 .mySlides {
   height: 315px
+}
+
+footer {
+  display: inherit;
 }

@@ -5,6 +5,20 @@
     <link rel="stylesheet" href="icons.css">
     <link rel="stylesheet" href="basic.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
     <script id="template-article" type="text/x-handlebars-template">
       <article class="testProjects">
         <a href="{{projectURL}}" target='_blank'>{{name}}</a>
@@ -13,12 +27,13 @@
         <p>{{description}}</p>
       </article>
     </script>
+
   </head>
   <body>
       <header id="page-header">Nancy Perez Portfolio Site</header>
 
       <div id="nameHeader">
-        <h1 id="initials">NP</h1>
+        <!-- <h1 id="initials">NP</h1> -->
         <h1 id="fullName">Nancy Perez</h1>
       </div>
       <nav class="main-nav">
@@ -27,19 +42,24 @@
           <ul id="main-menu">
             <li><a href="/" data-tab="hi">Home</a></li>
             <li><a href="/projects" data-tab="projects">Projects</a></li>
-            <li><a href="/contactme" data-tab="contact-me">Contact Me</a></li>
+            <li><a href="/contactme" data-tab="contact-me">About Me</a></li>
           </ul>
       </nav>
       <main>
+
         <section id="hi" class="tabs">
-              <div class="slideshow" >
-                <button class="slideshow-button-left" onclick="plusDivs(-1)">&#10094;</button>
-                <img class="mySlides" src="images/busMall.jpg">
-                <img class="mySlides" src="images/oxnardCity.jpg">
-                <img class="mySlides" src="images/oxnardFields.jpg">
-                <img class="mySlides" src="images/salmon.jpg">
-                <button class="slideshow-button-right" onclick="plusDivs(1)">&#10095;</button>
-              </div>
+            <img id="nopal" src="images/nopal.jpg">
+          <h3 id="intro">Hola, I'm Nancy!<br>I like learning all things Tech and meeting new people. <br> I'm usually always smiling, so don't be shy, say hi back!</h3>
+        </section>
+        <section id="contact-me" class="tabs">
+          <div class="slideshow" >
+            <button class="slideshow-button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="mySlides" src="images/aboutme.jpg">
+            <img class="mySlides" src="images/strawberry.jpg">
+            <img class="mySlides" src="images/school.jpg">
+            <button class="slideshow-button-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          <ul></ul>
         </section>
 
       <section id="projects" class="tabs">
@@ -57,12 +77,13 @@
        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
        <script src="page.js"></script>
-       <script type="text/javascript" src="finishedProjects.js"></script>
        <script type="text/javascript" src="script.js"></script>
-       <script type="text/javascript" src="aboutController.js"></script>
+       <script src="repoView.js"></script>
+         <script type="text/javascript" src="aboutController.js"></script>
        <script type="text/javascript" src="projectsController.js"></script>
        <script type="text/javascript" src="contactController.js"></script>
        <script src="routes.js"></script>
+       <script type="text/javascript">Project.fetchAll()</script>
 
   </body>
 </html>

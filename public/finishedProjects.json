@@ -1,9 +1,7 @@
-
-
 [
   {
     "id": "project1",
-    "projectURL": "https://www.google.com/",
+    "projectURL": "https://github.com/pereznancy/cookie-stand",
     "name": "Salmon Cookies",
     "date": "February 2018",
     "image1": "images/salmon.jpg",
@@ -13,20 +11,20 @@
 
   {
     "id": "project2",
-    "projectURL": "www.yahoo.com",
+    "projectURL": "https://github.com/pereznancy/market-analysis-app/tree/class13",
     "name": "Market Analysis App",
     "date": "February 2018",
     "image1": "images/busMall.jpg",
-    "description": "adlskfcjwodfawofihew"
+    "description": "This is a market analysis project designed to take user input to determine the popular items."
   },
 
   {
     "id": "project1",
-    "projectURL": "www.aol.com",
-    "name": "Salmon Cookies",
-    "date": "February 2018",
-    "image1": "images/salmon.jpg",
-    "description": "This web application was made to help a small business as it grows. It calculates the number of cookies needed for each storefront based on anticipated customers."
+    "projectURL": "https://github.com/w-tronvig223/Couch-Potatoes",
+    "name": "Couch Potatoes",
+    "date": "March 2018",
+    "image1": "images/couch.jpg",
+    "description": "This web application was made to help you decide what to do on your day off, or when your regular plans have fallen through. It takes the users option selections and provides an activity to do."
   },
 
   {
@@ -35,6 +33,6 @@
     "name": "Market Analysis App",
     "date": "February 2018",
     "image1": "images/busMall.jpg",
-    "description": "adlskfcjwodfawofihew"
+    "description": "Whyyy"
   }
 ]
